@@ -1,6 +1,6 @@
 # Branching Strategien für effektive Zusammenarbeit
 
-Eine klare Branching-Strategie ist essentiell für erfolgreiche Teamarbeit, besonders während eines Hackathons.
+Eine klare Branching-Strategie ist essentiell für erfolgreiche Teamarbeit, besonders während des Hackathons!
 
 ## Grundlegende Konzepte
 
@@ -59,3 +59,8 @@ Eine klare Branching-Strategie ist essentiell für erfolgreiche Teamarbeit, beso
 - bugfix/behebung-des-problems
 - hotfix/kritischer-fehler
 - experiment/neue-idee
+
+## Tools
+
+- lazygit cli tool
+- github plugin in VsCode
