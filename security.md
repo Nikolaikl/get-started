@@ -50,6 +50,10 @@ Sicherheit ist entscheidend bei der Arbeit mit sensiblen Daten und Code. Hier si
    - Nutzen Sie GitHub Secrets
    - Keine sensiblen Daten in Klartext speichern
 
+## Signed Commits
+
+#TODO: anleitung signed commits
+
 ## Allgemeine Best Practices
 
 - Regelmäßige Sicherheitsaudits durchführen
