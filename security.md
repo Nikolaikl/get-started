@@ -52,7 +52,41 @@ Sicherheit ist entscheidend bei der Arbeit mit sensiblen Daten und Code. Hier si
 
 ## Signed Commits
 
-#TODO: anleitung signed commits
+1. **GPG-Schlüssel erstellen**
+   ```bash
+   gpg --full-generate-key
+   ```
+   - RSA-Schlüsseltyp wählen
+   - 4096 Bit Schlüssellänge
+   - Gültigkeitsdauer festlegen
+
+2. **Schlüssel zu GitHub hinzufügen**
+   - Öffentlichen Schlüssel anzeigen:
+     ```bash
+     gpg --armor --export YOUR_KEY_ID
+     ```
+   - In GitHub unter Settings -> SSH and GPG keys einfügen
+
+3. **Git für Signierung konfigurieren**
+   ```bash
+   git config --global user.signingkey YOUR_KEY_ID
+   git config --global commit.gpgsign true
+   ```
+
+4. **Commits signieren**
+   - Normaler Commit:
+     ```bash
+     git commit -S -m "Your commit message"
+     ```
+   - Alle zukünftigen Commits automatisch signieren:
+     ```bash
+     git config --global commit.gpgsign true
+     ```
+
+5. **Signatur überprüfen**
+   ```bash
+   git log --show-signature
+   ```
 
 ## Allgemeine Best Practices
 
